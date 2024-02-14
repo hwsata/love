@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Valentine's Card</title>
+<style>
+body {
+    background-color: #FFE4E1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#heart {
+    font-size: 100px;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#message {
+    display: none;
+}
+
+</style>
+</head>
+<body>
+	<h1> ВАЛЕНТИНКА... </h1>
+<div id="heart" onclick="revealMessage()">❤️</div>
+<div id="message">
+    <h1> Ника, Если бы я собирался на необитаемый остров, то взял бы с собой только тебя ❤️</h1>
+    <img src="IMG_20240210_153107_802.jpg" alt="Valentine's Image" style="max-width: 100%;">
+    	<p> От поклонника: Winsent Sweet. Sata.</p>
+</div>
+
+<script>
+function revealMessage() {
+    document.getElementById("heart").style.display = "none";
+    document.getElementById("message").style.display = "block";
+}
+</script>
+</body>
+</html>
